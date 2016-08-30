@@ -29,12 +29,12 @@ def createswarm(dictRef):
         else:
             if(data[2].isdigit()):
                 size = int(data[2])
-                if size < 31:
+                if size < 51:
                     if(len(data) < 4):
                         swarmlingNames = 'imp'
                     else:
                         swarmlingNames = data[3]
-                    if(len(swarmlingNames) < 7):
+                    if(len(swarmlingNames) < 15):
 
                         #first createimp called swarm
                         swarmRef = dictRef
@@ -58,14 +58,3 @@ def createswarm(dictRef):
                 dictRef['bot'].talk(dictRef['where'], "{d} is not a number".format(d=data[2]))
     else:
         dictRef['bot'].talk(dictRef['where'], "There already exists a swarm")
-
-
-
-
-
-
-
-
-
-
-
