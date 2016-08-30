@@ -10,4 +10,4 @@ def broadcast(dictRef):
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
         less.performAbility(ability, dictRef)
-        print(less)
+        
