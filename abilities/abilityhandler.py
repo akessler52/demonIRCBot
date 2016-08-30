@@ -51,7 +51,7 @@ class Abilities:
         'tell':             0b00000000000001000000000000000000,
         'identify':         0b00000000000010000000000000000000, #displays information about the bot
         'github':           0b00000000000100000000000000000000, #prints a link to the github :D
-        'spawnmoreoverlords':      0b00000000001000000000000000000000, #creates a swarm!!
+        'spawnoverlord':    0b00000000001000000000000000000000, #creates a swarm!!
         'help':             0b00000000010000000000000000000000, #halppp
         'asciibomb':        0b00000000100000000000000000000000, #WIP
 #        'spam':             0b00000000010000000000000000000000, #pulls random spam line from file
@@ -73,7 +73,7 @@ class Abilities:
         'yell': yell,
         'broadcast': broadcast,
         'becomeswarm': becomeswarm,
-        'spawnmoreoverlords': createswarm,
+        'spawnoverlord': createswarm,
         'timedevent': timedevent,
         'repeat': repeat,
         'help': help,
