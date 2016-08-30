@@ -10,7 +10,7 @@ def noExistingSwarm(origin):
 
 def findSwarmBot(bot):
     for less in bot.lessers:
-        if less.name == 'swarm':
+        if less.name == 'overlord':
             return less
 
 def createswarm(dictRef):
@@ -38,13 +38,13 @@ def createswarm(dictRef):
 
                         #first createimp called swarm
                         swarmRef = dictRef
-                        swarmRef['data'] = '{n} createimp {s}'.format(n=dictRef['bot'].name, s='swarm')
+                        swarmRef['data'] = '{n} createimp {s}'.format(n=dictRef['bot'].name, s='overlord')
                         origin.performAbility('createimp', swarmRef)
                         #then createimp x times with swarm
                         swarmlingRef = swarmRef
                         swarmlingRef['bot'] = findSwarmBot(origin)
                         for x in xrange(size):
-                            swarmlingRef['data'] = '{n} createimp {s}'.format(n='swarm', s=swarmlingNames+str(x+1))
+                            swarmlingRef['data'] = '{n} createimp {s}'.format(n='overlord', s=swarmlingNames+str(x+1))
                             swarmlingRef['bot'].performAbility('createimp', swarmlingRef)
 #                            time.sleep(2)
 
