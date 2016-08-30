@@ -20,12 +20,12 @@ def asciibomb(dictRef):
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.joinChan(data[3])
-            less.channels.append(data[3])
+            # less.channels.append(data[3])
         printer(dictRef)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
-            less.channels.remove(data[3])
+            # less.channels.remove(data[3])
     else:
         printer(dictRef)
 
@@ -36,7 +36,7 @@ def printer(dictRef):
     el_ascii = data[2]
     art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
     if len(data) > 3:
-        say_in = dictRef[3]
+        say_in = data[3]
     else:
         say_in = dictRef['where']
     f = open(art_file)
