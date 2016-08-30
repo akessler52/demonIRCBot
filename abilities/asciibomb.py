@@ -1,4 +1,4 @@
-
+from time import sleep
 
 # def asciibomb(dictRef):
 #     data = dictRef['data'].split(' ', 4)
@@ -23,6 +23,8 @@ def asciibomb(dictRef):
             # less.channels.append(data[3])
             print("not out yet")
         print("made it out fine...")
+        time.sleep(5)
+        print("go to print")
         print(dictRef)
         printer(dictRef)
         for less in dictRef['bot'].lessers:
