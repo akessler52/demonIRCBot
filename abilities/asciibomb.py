@@ -42,7 +42,7 @@ def printer(dictRef):
     lines = f.readlines()
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
-        less.talk(dictRef['where'], lines[i])
+        less.talk(say_in, lines[i])
         i += 1
         if len(lines) == i:
             break
