@@ -23,6 +23,7 @@ def asciibomb(dictRef):
             # less.channels.append(data[3])
             print("not out yet")
         print("made it out fine...")
+        print(dictRef)
         printer(dictRef)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
@@ -44,7 +45,9 @@ def printer(dictRef):
     print(say_in)
     f = open(art_file)
     lines = f.readlines()
+    print("going to print loop")
     for less in dictRef['bot'].lessers:
+        print("in print loop")
         dictRef['bot'] = less
         less.talk(say_in, lines[i])
         i += 1
