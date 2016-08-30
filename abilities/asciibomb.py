@@ -20,11 +20,12 @@ def asciibomb(dictRef):
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.joinChan(data[3])
+            less.channels.append(data[3])
         printer(dictRef)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
-            # less.channels.remove(data[3])
+            less.channels.remove(data[3])
     else:
         printer(dictRef)
 
