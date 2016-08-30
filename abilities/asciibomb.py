@@ -9,9 +9,10 @@
 def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 2)
     el_ascii = data[2]
+    art_file = "art/{f}".format(f=el_ascii)
     print('attempting to ascii')
+    f = open(art_file)
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
-        f = open('art/dice')
         less.performAbility('echo', line)
-        f.close()
+    f.close()
