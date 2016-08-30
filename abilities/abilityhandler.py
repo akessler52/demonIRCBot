@@ -47,11 +47,12 @@ class Abilities:
         'broadcast':        0b00000000000000001000000000000000, # tells what abilities bot has
         'addowner':         0b00000000000000010000000000000000, # tells what abilities bot has
 #        'removeOwner':      0b00000000000000100000000000000000, # tells what abilities bot has
-        'telephone':        0b00000000000001000000000000000000,
+        'tell':             0b00000000000001000000000000000000,
         'identify':         0b00000000000010000000000000000000, #displays information about the bot
         'github':           0b00000000000100000000000000000000, #prints a link to the github :D
         'createswarm':      0b00000000001000000000000000000000, #creates a swarm!!
         'help':             0b00000000010000000000000000000000, #halppp
+        'asciibomb':        0b00000000100000000000000000000000, #WIP
 #        'spam':             0b00000000010000000000000000000000, #pulls random spam line from file
 #        'macro':             0b00000000010000000000000000000000, #macros are a defined ability created from a collection of other abilities
         }
@@ -61,7 +62,7 @@ class Abilities:
         'join': join,
         'suicide': suicide,
         'addowner': addOwner,
-        'telephone': telephone,
+        'tell': telephone,
         'createimp': createImp,
         'identify': identify,
         'github': github,
@@ -75,6 +76,7 @@ class Abilities:
         'timedevent': timedevent,
         'repeat': repeat,
         'help': help,
+        'asciibomb': asciibomb,
 #        'spam': spam,
         }
 

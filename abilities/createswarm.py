@@ -29,12 +29,12 @@ def createswarm(dictRef):
         else:
             if(data[2].isdigit()):
                 size = int(data[2])
-                if size < 91:
+                if size < 51:
                     if(len(data) < 4):
                         swarmlingNames = 'imp'
                     else:
                         swarmlingNames = data[3]
-                    if(len(swarmlingNames) < 15):
+                    if(len(swarmlingNames) < 10):
 
                         #first createimp called swarm
                         swarmRef = dictRef
@@ -51,9 +51,9 @@ def createswarm(dictRef):
                         #then set variable
                         swarmlingRef['bot'].isSwarm = True
                     else:
-                        dictRef['bot'].talk(dictRef['where'], "Too large of swarmling name, needs to be 6 or less ")
+                        dictRef['bot'].talk(dictRef['where'], "Too large of swarmling name, needs to be 9 or less ")
                 else:
-                    dictRef['bot'].talk(dictRef['where'], "Must be of size 30 or less")
+                    dictRef['bot'].talk(dictRef['where'], "Must be of size 50 or less")
             else:
                 dictRef['bot'].talk(dictRef['where'], "{d} is not a number".format(d=data[2]))
     else:
