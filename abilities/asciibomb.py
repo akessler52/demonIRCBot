@@ -14,6 +14,7 @@
 #     f.close()
 
 def asciibomb(dictRef):
+    print(dictRef)
     sdata = dictRef
     data = dictRef['data'].split(' ', 3)
     if len(data) > 3:
