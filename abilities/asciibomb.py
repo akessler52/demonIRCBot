@@ -15,7 +15,8 @@
 
 def asciibomb(dictRef):
     print(dictRef)
-    sdata = dictRef
+    topDog = dictRef['bot']
+    print(topDog)
     data = dictRef['data'].split(' ', 3)
     if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
@@ -29,16 +30,16 @@ def asciibomb(dictRef):
         print("go to print")
         print(dictRef)
         print(sdata)
-        printer(sdata)
+        printer(dictRef, topDog)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
             less.channels.remove(data[3])
     else:
-        printer(dictRef)
+        printer(dictRef, topDog)
 
 
-def printer(dictRef):
+def printer(dictRef, top):
     data = dictRef['data'].split(' ', 3)
     i = 0
     el_ascii = data[2]
@@ -51,7 +52,7 @@ def printer(dictRef):
     f = open(art_file)
     lines = f.readlines()
     print("going to print loop")
-    for less in dictRef['bot'].lessers:
+    for less in top.lessers:
         print("in print loop")
         dictRef['bot'] = less
         less.talk(say_in, lines[i])
