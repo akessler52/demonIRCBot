@@ -15,6 +15,7 @@ from .broadcast import *
 from .becomeswarm import *
 from .timedevent import *
 from .repeat import *
+from .asciibomb import *
 #from .help import *
 
 __all__ = ['Ability', 'Abilities']
