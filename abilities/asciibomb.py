@@ -76,32 +76,32 @@ def printer(dictRef, top):
             break
     f.close()
 
-
-def printer2(dictRef, top):
-    data = dictRef['data'].split(' ', 4)
-    i = 0
-    el_ascii = data[2]
-    art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
-    if len(data) > 3:
-        say_in = data[3]
-    else:
-        say_in = dictRef['where']
-    f = open(art_file)
-    lines = f.readlines()
-    # for less in top.lessers:
-    #     dictRef['bot'] = less
-    #     less.talk(say_in, lines[i])
-    #     i += 1
-    #     if len(lines) == i:
-    #         break
-
-    for less in top.lessers:
-        while i < range(len(lines)):
-            # top = less
-            less.talk(say_in, lines[i])
-            i += 1
-            time.sleep(0.1)
-            if len(lines) == i:
-                break
-        i = 0
-    f.close()
+#
+# def printer2(dictRef, top):
+#     data = dictRef['data'].split(' ', 4)
+#     i = 0
+#     el_ascii = data[2]
+#     art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
+#     if len(data) > 3:
+#         say_in = data[3]
+#     else:
+#         say_in = dictRef['where']
+#     f = open(art_file)
+#     lines = f.readlines()
+#     # for less in top.lessers:
+#     #     dictRef['bot'] = less
+#     #     less.talk(say_in, lines[i])
+#     #     i += 1
+#     #     if len(lines) == i:
+#     #         break
+#
+#     for less in top.lessers:
+#         while i < range(len(lines)):
+#             # top = less
+#             less.talk(say_in, lines[i])
+#             i += 1
+#             time.sleep(0.1)
+#             if len(lines) == i:
+#                 break
+#         i = 0
+#     f.close()
