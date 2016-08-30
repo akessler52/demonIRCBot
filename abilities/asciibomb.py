@@ -1,4 +1,4 @@
-import time
+
 
 # def asciibomb(dictRef):
 #     data = dictRef['data'].split(' ', 4)
@@ -24,12 +24,13 @@ def asciibomb(dictRef):
             dictRef['bot'] = less
             less.joinChan(data[3])
             less.channels.append(data[3])
-        for i in range(1000000):
+        for i in range(10000000):
             j = 1+1+3+635-123
         dictRef['bot'] = topDog
         printer(dictRef, dictRef['bot'])
         dictRef['bot'] = topDog
-        time.sleep(5)
+        for i in range(10000000):
+            j = 1+1+3+635-123
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
