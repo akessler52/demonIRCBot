@@ -44,6 +44,6 @@ def printer(dictRef):
         dictRef['bot'] = less
         less.talk(dictRef['where'], lines[i])
         i += 1
-        if len(lines) = i:
+        if len(lines) == i:
             break
     f.close()
