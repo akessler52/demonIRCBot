@@ -23,7 +23,7 @@ class Bot(threading.Thread): #bots are actually threads, who knew?
         self.IRCOwners = ['rush!rush@yakko.cs.wmich.edu']
         self.greaters = [] #greaters are bots that are ancestors of this bot
 
-        self.channels = ['#rush']
+        self.channels = ['#rush', '#nospace']
         if(kwargs['channels'] not in self.channels):
             self.channels.append(kwargs.get('channels'))
         self.lessers = [] #list of bots who are children of this bot
