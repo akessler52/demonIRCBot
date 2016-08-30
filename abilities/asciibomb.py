@@ -15,7 +15,7 @@ import time
 
 def asciibomb(dictRef):
     topDog = dictRef['bot']
-    data = dictRef['data'].split(' ', 3)
+    data = dictRef['data'].split(' ', 44)
     if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
         dictRef['bot'].joinChan(data[3])
@@ -37,7 +37,7 @@ def asciibomb(dictRef):
             less.channels.remove(data[3])
         topDog.leave(data[3])
         topDog.channels.remove(data[3])
-    elif !data[3].startswith('#'):
+    elif data[4] == '-pm':
         printer2(dictRef, dictRef['bot'])
     else:
         printer(dictRef, dictRef['bot'])
