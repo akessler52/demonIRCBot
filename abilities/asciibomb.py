@@ -16,12 +16,12 @@ import time
 def asciibomb(dictRef):
     topDog = dictRef['bot']
     data = dictRef['data'].split(' ', 4)
-    d = data[3]
+    # d = data[3]
     print(data[4])
     print(d.startswith('#'))
-    if data[4] == '-pm':
-        printer2(dictRef, dictRef['bot'])
-    elif len(data) > 3:
+    # if data[4] == '-pm':
+    #     printer2(dictRef, dictRef['bot'])
+    if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
         dictRef['bot'].joinChan(data[3])
         dictRef['bot'].channels.append(data[3])
