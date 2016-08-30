@@ -45,7 +45,7 @@ def asciibomb(dictRef):
 
 
 def printer(dictRef, top):
-    data = dictRef['data'].split(' ', 3)
+    data = dictRef['data'].split(' ', 4)
     i = 0
     el_ascii = data[2]
     art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
