@@ -17,8 +17,8 @@ def asciibomb(dictRef):
     topDog = dictRef['bot']
     data = dictRef['data'].split(' ', 4)
     # d = data[3]
-    print(data[4])
-    print(d.startswith('#'))
+    # print(data[4])
+    # print(d.startswith('#'))
     # if data[4] == '-pm':
     #     printer2(dictRef, dictRef['bot'])
     if len(data) > 3:
