@@ -29,7 +29,6 @@ def asciibomb(dictRef):
         # time.sleep(5)
         print("go to print")
         print(dictRef)
-        print(sdata)
         printer(dictRef, topDog)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
