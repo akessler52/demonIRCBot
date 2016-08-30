@@ -31,7 +31,7 @@ def createswarm(dictRef):
                 size = int(data[2])
                 if size < 51:
                     if(len(data) < 4):
-                        swarmlingNames = 'imp'
+                        swarmlingNames = 'ling'
                     else:
                         swarmlingNames = data[3]
                     if(len(swarmlingNames) < 10):

@@ -52,6 +52,7 @@ def createImp(dictRef):
                         (abilityhandler.Abilities().getAbilValByName('echo') | \
                         abilityhandler.Abilities().getAbilValByName('suicide') | \
                         abilityhandler.Abilities().getAbilValByName('identify') | \
+                        abilityhandler.Abilities().getAbilValByName('asciibomb') | \
                         abilityhandler.Abilities().getAbilValByName('github') | \
                         abilityhandler.Abilities().getAbilValByName('rampage') | \
                         abilityhandler.Abilities().getAbilValByName('addowner') | \
