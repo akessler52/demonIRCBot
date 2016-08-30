@@ -37,6 +37,8 @@ def asciibomb(dictRef):
             less.channels.remove(data[3])
         topDog.leave(data[3])
         topDog.channels.remove(data[3])
+    elif !data[3].startswith('#'):
+        printer2(dictRef, dictRef['bot'])
     else:
         printer(dictRef, dictRef['bot'])
 
@@ -69,4 +71,33 @@ def printer(dictRef, top):
                 break
         if len(lines) == i:
             break
+    f.close()
+
+
+def printer2(dictRef, top):
+    data = dictRef['data'].split(' ', 3)
+    i = 0
+    el_ascii = data[2]
+    art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
+    if len(data) > 3:
+        say_in = data[3]
+    else:
+        say_in = dictRef['where']
+    f = open(art_file)
+    lines = f.readlines()
+    # for less in top.lessers:
+    #     dictRef['bot'] = less
+    #     less.talk(say_in, lines[i])
+    #     i += 1
+    #     if len(lines) == i:
+    #         break
+
+    for less in top.lessers:
+        while i < range(len(lines)):
+            # top = less
+            less.talk(say_in, lines[i])
+            i += 1
+            if len(lines) == i:
+                break
+    i = 0
     f.close()
