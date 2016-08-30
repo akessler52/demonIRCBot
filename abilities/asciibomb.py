@@ -26,6 +26,7 @@ def asciibomb(dictRef):
             less.channels.append(data[3])
         dictRef['bot'] = topDog
         printer(dictRef, dictRef['bot'])
+        dictRef['bot'] = topDog
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
