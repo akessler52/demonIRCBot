@@ -11,8 +11,8 @@ def asciibomb(dictRef):
     el_ascii = "dice"
     art_file = "./art/{f}".format(f=el_ascii)
     print('attempting to ascii')
-        f = open(art_file)
-        for less in dictRef['bot'].lessers:
-            dictRef['bot'] = less
-            less.performAbility('echo', line)
-        f.close()
+    f = open(art_file)
+    for less in dictRef['bot'].lessers:
+        dictRef['bot'] = less
+        less.performAbility('echo', line)
+    f.close()
