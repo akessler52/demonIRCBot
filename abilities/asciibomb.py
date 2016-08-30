@@ -20,7 +20,7 @@ def asciibomb(dictRef):
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.joinChan(data[3])
-            # less.channels.append(data[3])
+            less.channels.append(data[3])
             print("not out yet")
         print("made it out fine...")
         # time.sleep(5)
@@ -30,7 +30,7 @@ def asciibomb(dictRef):
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
-            # less.channels.remove(data[3])
+            less.channels.remove(data[3])
     else:
         printer(dictRef)
 
