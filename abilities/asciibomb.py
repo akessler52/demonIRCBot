@@ -59,7 +59,7 @@ def printer(dictRef, top):
     #         break
     while i < range(len(lines)):
         for less in top.lessers:
-            dictRef['bot'] = less
+            top = less
             less.talk(say_in, lines[i])
             i += 1
             if len(lines) == i:
