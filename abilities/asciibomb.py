@@ -10,11 +10,8 @@ def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 2)
     el_ascii = data[2]
     print('attempting to ascii')
-    for i in dictRef['bot'].lessers:
+    for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
-        f = open('masters.txt')
-        for line in f:
-            print line,
-            sck.send('PRIVMSG ' + chan + " " + line)
+        f = open('art/dice')
+        less.performAbility('echo', line)
         f.close()
-        less[i].performAbility(ability, dictRef)
