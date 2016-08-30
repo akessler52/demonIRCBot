@@ -8,7 +8,7 @@
 
 def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 2)
-    el_ascii = data[2]
+    el_ascii = "dice"
     art_file = "art/{f}".format(f=el_ascii)
     print('attempting to ascii')
     f = open(art_file)
