@@ -20,10 +20,10 @@ class Bot(threading.Thread): #bots are actually threads, who knew?
         threading.Thread.__init__(self)
         #Not sure what to do about the default name
         #oh boy multiple owners! This is quite the list!
-        self.IRCOwners = ['nospace!edarr@yakko.cs.wmich.edu'] #, 'hellbacon!hellbacon@yakko.cs.wmich.edu']
+        self.IRCOwners = ['rush!rush@yakko.cs.wmich.edu']
         self.greaters = [] #greaters are bots that are ancestors of this bot
 
-        self.channels = ['#thepit']
+        self.channels = ['#rush']
         if(kwargs['channels'] not in self.channels):
             self.channels.append(kwargs.get('channels'))
         self.lessers = [] #list of bots who are children of this bot
@@ -172,5 +172,3 @@ class Bot(threading.Thread): #bots are actually threads, who knew?
                             dataDict['channel'],
                             dataDict['data'],
                             dataDict['mtype'])
-
-
