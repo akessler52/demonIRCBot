@@ -59,4 +59,6 @@ def printer(dictRef, top):
             i += 1
             if len(lines) == i:
                 break
+        if len(lines) == i:
+            break
     f.close()
