@@ -102,5 +102,5 @@ def printer2(dictRef, top):
             i += 1
             if len(lines) == i:
                 break
-    i = 0
+        i = 0
     f.close()
