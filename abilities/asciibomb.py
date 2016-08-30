@@ -1,7 +1,7 @@
 
 
 def asciibomb(dictRef):
-    data = dictRef['data'].split(' ', 2)
+    data = dictRef['data'].split(' ', 4)
     i = 0
     el_ascii = data[2]
     art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
