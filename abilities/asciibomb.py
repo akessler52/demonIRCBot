@@ -32,7 +32,7 @@ def asciibomb(dictRef):
         topDog.leave(data[3])
         topDog.channels.remove(data[3])
     else:
-        printer(dictRef, topDog)
+        printer(dictRef, dictRef['bot'])
 
 
 def printer(dictRef, top):
@@ -46,10 +46,17 @@ def printer(dictRef, top):
         say_in = dictRef['where']
     f = open(art_file)
     lines = f.readlines()
-    for less in top.lessers:
-        dictRef['bot'] = less
-        less.talk(say_in, lines[i])
-        i += 1
-        if len(lines) == i:
-            break
+    # for less in top.lessers:
+    #     dictRef['bot'] = less
+    #     less.talk(say_in, lines[i])
+    #     i += 1
+    #     if len(lines) == i:
+    #         break
+    for i in range(len(lines)):
+        for less in top.lessers:
+            dictRef['bot'] = less
+            less.talk(say_in, lines[i])
+            i += 1
+            if len(lines) == i:
+                break
     f.close()
