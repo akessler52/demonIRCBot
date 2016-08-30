@@ -11,7 +11,7 @@ def asciibomb(dictRef):
     el_ascii = "dice"
     art_file = "./art/{f}".format(f=el_ascii)
     print('attempting to ascii')
-    f = open(art_file)
+    f = open(/home/members/akessler/bots/demonIRCBot/abilities/art/dice)
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
         less.performAbility('echo', line)
