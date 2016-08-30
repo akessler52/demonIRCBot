@@ -39,6 +39,7 @@ def printer(dictRef):
         say_in = data[3]
     else:
         say_in = dictRef['where']
+    print(say_in)
     f = open(art_file)
     lines = f.readlines()
     for less in dictRef['bot'].lessers:
