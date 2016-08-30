@@ -15,7 +15,8 @@ import time
 
 def asciibomb(dictRef):
     topDog = dictRef['bot']
-    data = dictRef['data'].split(' ', 44)
+    data = dictRef['data'].split(' ', 4)
+    # d = data[3]
     if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
         dictRef['bot'].joinChan(data[3])
@@ -75,7 +76,7 @@ def printer(dictRef, top):
 
 
 def printer2(dictRef, top):
-    data = dictRef['data'].split(' ', 3)
+    data = dictRef['data'].split(' ', 4)
     i = 0
     el_ascii = data[2]
     art_file = "/home/members/akessler/bots/demonIRCBot/abilities/art/{f}".format(f=el_ascii)
