@@ -70,6 +70,8 @@ def printer(dictRef, top):
             i += 1
             if len(say_in) > 6:
                 time.sleep(0.05)
+            if i%29 == 0:
+                time.sleep(1)
             if len(lines) == i:
                 break
         if len(lines) == i:
