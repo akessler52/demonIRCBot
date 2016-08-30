@@ -29,7 +29,7 @@ def createswarm(dictRef):
         else:
             if(data[2].isdigit()):
                 size = int(data[2])
-                if size < 51:
+                if size < 91:
                     if(len(data) < 4):
                         swarmlingNames = 'imp'
                     else:
