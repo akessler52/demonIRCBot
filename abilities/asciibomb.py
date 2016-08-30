@@ -101,7 +101,7 @@ def printer2(dictRef, top):
             less.talk(say_in, lines[i])
             i += 1
             if len(say_in) > 6:
-                time.sleep(0.05)
+                time.sleep(0.25)
             if len(lines) == i:
                 break
         i = 0
