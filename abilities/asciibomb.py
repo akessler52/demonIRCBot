@@ -27,6 +27,8 @@ def asciibomb(dictRef):
         dictRef['bot'] = topDog
         printer(dictRef, dictRef['bot'])
         dictRef['bot'] = topDog
+        for i in range(1000):
+            o=i
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
