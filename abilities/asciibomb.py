@@ -14,6 +14,7 @@
 #     f.close()
 
 def asciibomb(dictRef):
+    sdata = dictRef
     data = dictRef['data'].split(' ', 3)
     if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
@@ -26,7 +27,8 @@ def asciibomb(dictRef):
         # time.sleep(5)
         print("go to print")
         print(dictRef)
-        printer(dictRef)
+        print(sdata)
+        printer(sdata)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
