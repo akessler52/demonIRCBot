@@ -18,25 +18,25 @@ def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 3)
     if len(data) > 3:
         jdata = "x {c}".format(c=data[3])
-        # dictRef['bot'].joinChan(data[3])
-        # dictRef['bot'].channels.append(data[3])
+        dictRef['bot'].joinChan(data[3])
+        dictRef['bot'].channels.append(data[3])
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.joinChan(data[3])
             less.channels.append(data[3])
-        time.sleep(.5)
+        time.sleep(1)
         dictRef['bot'] = topDog
         printer(dictRef, dictRef['bot'])
         dictRef['bot'] = topDog
-        time.sleep(.5)
+        time.sleep(1)
         # for i in range(10000000):
         #     j = 1+1+3+635-123
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
             less.channels.remove(data[3])
-        # topDog.leave(data[3])
-        # topDog.channels.remove(data[3])
+        topDog.leave(data[3])
+        topDog.channels.remove(data[3])
     else:
         printer(dictRef, dictRef['bot'])
 
