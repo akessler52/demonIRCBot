@@ -15,7 +15,7 @@
 
 def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 4)
-    if len(data) < 4
+    if len(data) < 4:
         print(dictRef)
 
 
