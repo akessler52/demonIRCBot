@@ -1,4 +1,4 @@
-def telephone(dictRef):
+def asciibomb(dictRef):
     data = dictRef['data'].split(' ', 3)
     if(len(data) < 3):
         dictRef['bot'].talk(dictRef['where'], 'Who do I call?')

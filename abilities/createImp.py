@@ -55,7 +55,7 @@ def createImp(dictRef):
                         abilityhandler.Abilities().getAbilValByName('github') | \
                         abilityhandler.Abilities().getAbilValByName('rampage') | \
                         abilityhandler.Abilities().getAbilValByName('addowner') | \
-                        abilityhandler.Abilities().getAbilValByName('telephone') | \
+                        abilityhandler.Abilities().getAbilValByName('tell') | \
                         abilityhandler.Abilities().getAbilValByName('createimp') | \
                         abilityhandler.Abilities().getAbilValByName('broadcast') | \
                         abilityhandler.Abilities().getAbilValByName('becomeswarm') | \
@@ -78,5 +78,3 @@ def createImp(dictRef):
                     dictRef['bot'].talk(dictRef['where'], "Name too long")
         else:
             dictRef['bot'].talk(dictRef['where'], "Not a valid IRC name")
-
-
