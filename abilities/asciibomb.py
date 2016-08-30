@@ -24,11 +24,11 @@ def asciibomb(dictRef):
             dictRef['bot'] = less
             less.joinChan(data[3])
             less.channels.append(data[3])
-        time.sleep(1)
+        time.sleep(5)
         dictRef['bot'] = topDog
         printer(dictRef, dictRef['bot'])
         dictRef['bot'] = topDog
-        time.sleep(1)
+        time.sleep(5)
         for less in dictRef['bot'].lessers:
             dictRef['bot'] = less
             less.leave(data[3])
