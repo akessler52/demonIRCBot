@@ -8,7 +8,12 @@ def broadcast(dictRef):
     # print('with data: ' + str(dictRef))
 
     # dictRef['bot'].performAbility(ability, dictRef)
+    i = 0
+
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
         less.performAbility(ability, dictRef)
-        time.sleep(.25)
+        time.sleep(.05)
+        i += 1
+        if i%25 == 0:
+            time.sleep(5)
