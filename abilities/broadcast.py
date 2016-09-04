@@ -16,4 +16,4 @@ def broadcast(dictRef):
         time.sleep(.05)
         i += 1
         if i%25 == 0:
-            time.sleep(5)
+            time.sleep(10)
