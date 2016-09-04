@@ -11,4 +11,4 @@ def broadcast(dictRef):
     for less in dictRef['bot'].lessers:
         dictRef['bot'] = less
         less.performAbility(ability, dictRef)
-        time.sleep(.05)
+        time.sleep(.25)
