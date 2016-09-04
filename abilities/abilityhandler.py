@@ -16,6 +16,7 @@ from .becomeswarm import *
 from .timedevent import *
 from .repeat import *
 from .asciibomb import *
+from .hearMyName import *
 #from .help import *
 
 __all__ = ['Ability', 'Abilities']
@@ -54,7 +55,8 @@ class Abilities:
         'spawnoverlord':    0b00000000001000000000000000000000, #creates a swarm!!
         'help':             0b00000000010000000000000000000000, #halppp
         'asciibomb':        0b00000000100000000000000000000000, #WIP
-#        'spam':             0b00000000010000000000000000000000, #pulls random spam line from file
+        'asciiname':        0b00000001000000000000000000000000,  # WIP
+        #        'spam':             0b00000000010000000000000000000000, #pulls random spam line from file
 #        'macro':             0b00000000010000000000000000000000, #macros are a defined ability created from a collection of other abilities
         }
 
@@ -78,6 +80,7 @@ class Abilities:
         'repeat': repeat,
         'help': help,
         'asciibomb': asciibomb,
+        'asciiname': hearMyName,
 #        'spam': spam,
         }
 
