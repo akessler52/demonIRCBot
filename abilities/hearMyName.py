@@ -1,4 +1,5 @@
 import time
+import re, socket
 
 
 def hearMyName(dictRef):
@@ -43,8 +44,8 @@ def ayy(dictRef, top, names):
 
     while i < range(len(lines)):
         for less in top.lessers:
-            l = "/nick {a}".format(a=lines[i])
-            less.talk(say_in, l)
+            less.nick(lines[i])
+            # ircsock.send("NICK " + lines[i])
             i += 1
             if len(say_in) > 6:
                 time.sleep(0.05)
