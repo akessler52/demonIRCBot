@@ -15,5 +15,5 @@ def broadcast(dictRef):
         less.performAbility(ability, dictRef)
         time.sleep(.05)
         i += 1
-        if i%25 == 0:
-            time.sleep(10)
+        if i%30 == 0:
+            time.sleep(30)
