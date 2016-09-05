@@ -7,10 +7,10 @@ def getem(dictRef):
     i = 0
     while True:
 
-        dictRef['bot'].performAbility(tell, "pilar: tell pilar zag: spawnoverlord  60 {j}".format(j=i)
+        dictRef['bot'].performAbility(tell, "zag: tell pilar zag: spawnoverlord  60" #{j}".format(j=i)
         # dictRef['bot'].performAbility(tell, "zag: spawnoverlord 60 {j}".format(j=i)
         # time.sleep(.02)
         # dictRef['bot'].performAbility(tell, "overlord{j}: tell {n} test".format(j=i, n=data[2]))
         # time.sleep(70)
         # dictRef['bot'].performAbility(tell, "{t}".format(t=top))
-        i = i+1
+        # i = i+1
