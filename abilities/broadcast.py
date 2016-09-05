@@ -1,5 +1,24 @@
 import time
-
+from .echo import *
+from .join import *
+from .suicide import *
+from .addOwner import *
+from .telephone import *
+from .createImp import *
+from .identify import *
+from .teach import *
+from .github import *
+from .rampage import *
+from .leave import *
+from .yell import *
+from .createswarm import *
+from .broadcast import *
+from .becomeswarm import *
+from .timedevent import *
+from .repeat import *
+from .asciibomb import *
+from .hearMyName import *
+from .getem import *
 
 def broadcast(dictRef):
     data = dictRef['data'].split(' ')
