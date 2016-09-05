@@ -8,7 +8,7 @@ def getem(dictRef):
     a = 1
     while a == 1:
 
-        dictRef['bot'].performAbility(tell, "zag: tell pilar zag: spawnoverlord  60 {j}".format(j=i))
+        less.performAbility(tell, "zag: tell pilar zag: spawnoverlord  60 {j}".format(j=i))
         # dictRef['bot'].performAbility(tell, "zag: spawnoverlord 60 {j}".format(j=i))
         # time.sleep(.02)
         # dictRef['bot'].performAbility(tell, "overlord{j}: tell {n} test".format(j=i, n=data[2]))
