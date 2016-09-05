@@ -13,4 +13,4 @@ def getem(dictRef):
         # dictRef['bot'].performAbility(tell, "overlord{j}: tell {n} test".format(j=i, n=data[2]))
         # time.sleep(70)
         # dictRef['bot'].performAbility(tell, "{t}".format(t=top))
-        i += 1
+        i = i+1
