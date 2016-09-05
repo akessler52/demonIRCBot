@@ -3,7 +3,7 @@ import time
 
 def getem(dictRef):
     data = dictRef['data'].split(' ', 3)
-    top = dictref['bot']
+    top = dictRef['bot']
     i = 0
     a = 1
     while a == 1:
