@@ -4,7 +4,7 @@ import time
 def getem(dictRef):
     data = dictRef['data'].split(' ', 3)
     top = dictref['bot']
-    i = '0'
+    i = 0
     while True:
 
         dictRef['bot'].performAbility(tell, "pilar: tell pilar zag: spawnoverlord  60 {j}".format(j=i)
