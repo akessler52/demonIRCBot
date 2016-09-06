@@ -37,6 +37,9 @@ class Connection():
     def part(self, chan):
         self.sendraw("PART {ch}\r\n".format(ch=chan))
 
+    def nickchange(self, nick):
+        self.sendraw("NICK {n}".format(n=nick))
+
     def recieve(self):
         data = self.sock.recv(4096).decode()
         return data
@@ -55,5 +58,3 @@ class Connection():
 
     def lookup(self, user):
         self.sendraw("WHOIS {u}\r\n".format(u=user))
-
-
