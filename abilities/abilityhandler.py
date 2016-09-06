@@ -57,7 +57,8 @@ class Abilities:
         'help':             0b00000000010000000000000000000000, #halppp
         'asciibomb':        0b00000000100000000000000000000000, #WIP
         'asciiname':        0b00000001000000000000000000000000,  # WIP
-        'getem':            0b00000010000000000000000000000000,  # WIP
+        'getem':            0b00000010000000000000000000000000,
+        'cname':            0b00000100000000000000000000000000,'  # WIP
         #        'spam':             0b00000000010000000000000000000000, #pulls random spam line from file
 #        'macro':             0b00000000010000000000000000000000, #macros are a defined ability created from a collection of other abilities
         }
@@ -84,6 +85,7 @@ class Abilities:
         'asciibomb': asciibomb,
         'asciiname': hearMyName,
         'getem': getem,
+        'cname': cname
 #        'spam': spam,
         }
 
