@@ -56,6 +56,9 @@ class Bot(threading.Thread): #bots are actually threads, who knew?
     def leave(self, chan):
         self.conn.part(chan)
 
+    def cname(self, nick):
+        self.sendraw("NICK {n}".format(n=nick))
+
     def talk(self, chan, msg):
         self.conn.privmsg(chan, msg)
 
